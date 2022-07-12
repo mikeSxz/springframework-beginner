@@ -16,4 +16,19 @@
     <bean id="helloWorldServiceGerman" factory-bean="helloWorldFactory" factory-method="createHelloWorldService">
         <constructor-arg value="de"></constructor-arg>
     </bean>
+
+    <bean id="helloWorldServicePolish" factory-bean="helloWorldFactory" factory-method="createHelloWorldService">
+        <constructor-arg value="pl"></constructor-arg>
+    </bean>
+
+    <bean id="helloWorldServiceRussian" factory-bean="helloWorldFactory" factory-method="createHelloWorldService">
+        <constructor-arg value="ru"></constructor-arg>
+    </bean>
+
+    <beans profile="english">
+        <bean id="helloWorldServiceEnglish" factory-bean="helloWorldFactory" factory-method="createHelloWorldService">
+            <constructor-arg value="en"></constructor-arg>
+        </bean>
+    </beans>
+
 </beans>

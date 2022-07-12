@@ -15,11 +15,12 @@ public class HelloConfig {
         return new HelloWorldFactory();
     }
 
-    @Bean
+    /*@Bean
     @Profile("english")
+    @Primary
     public HelloWorldService helloWorldServiceEnglish (HelloWorldFactory helloWorldFactory){
         return helloWorldFactory.createHelloWorldService("en");
-    }
+    }*/
 
     @Bean
     @Profile("spanish")
@@ -38,7 +39,7 @@ public class HelloConfig {
         return helloWorldFactory.createHelloWorldService("de");
     }*/
 
-    @Bean
+    /*@Bean
     public HelloWorldService helloWorldServicePolish(HelloWorldFactory helloWorldFactory){
         return helloWorldFactory.createHelloWorldService("pl");
     }
@@ -46,5 +47,5 @@ public class HelloConfig {
     @Bean
     public HelloWorldService helloWorldServiceRussian(HelloWorldFactory helloWorldFactory){
         return helloWorldFactory.createHelloWorldService("ru");
-    }
+    }*/
 }
