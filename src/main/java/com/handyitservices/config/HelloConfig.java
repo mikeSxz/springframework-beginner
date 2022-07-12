@@ -33,10 +33,10 @@ public class HelloConfig {
         return helloWorldFactory.createHelloWorldService("fr");
     }*/
 
-    @Bean
+   /* @Bean
     public HelloWorldService helloWorldServiceGerman(HelloWorldFactory helloWorldFactory){
         return helloWorldFactory.createHelloWorldService("de");
-    }
+    }*/
 
     @Bean
     public HelloWorldService helloWorldServicePolish(HelloWorldFactory helloWorldFactory){

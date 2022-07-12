@@ -12,4 +12,8 @@
     <bean id="french" factory-bean="helloWorldFactory" factory-method="createHelloWorldService">
         <constructor-arg value="fr"></constructor-arg>
     </bean>
+
+    <bean id="helloWorldServiceGerman" factory-bean="helloWorldFactory" factory-method="createHelloWorldService">
+        <constructor-arg value="de"></constructor-arg>
+    </bean>
 </beans>
