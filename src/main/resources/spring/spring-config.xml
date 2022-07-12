@@ -8,4 +8,8 @@
 
     <bean id="greetingController" class="com.handyitservices.controllers.GreetingController"/>
     <bean id="helloWorldFactory" class="com.handyitservices.services.HelloWorldFactory"/>
+
+    <bean id="french" factory-bean="helloWorldFactory" factory-method="createHelloWorldService">
+        <constructor-arg value="fr"></constructor-arg>
+    </bean>
 </beans>
