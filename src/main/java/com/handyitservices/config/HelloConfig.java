@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 public class HelloConfig {
 
-    @Bean
+    //@Bean
     public HelloWorldFactory helloWorldFactory(){
         return new HelloWorldFactory();
     }

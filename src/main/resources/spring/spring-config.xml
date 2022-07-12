@@ -7,4 +7,5 @@
     <contex:component-scan base-package="com.handyitservices"/>
 
     <bean id="greetingController" class="com.handyitservices.controllers.GreetingController"/>
+    <bean id="helloWorldFactory" class="com.handyitservices.services.HelloWorldFactory"/>
 </beans>
